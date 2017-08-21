@@ -1,6 +1,4 @@
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+## Writeup
 
 ---
 
@@ -52,7 +50,8 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration using the `calibrate()` function located in the same code cell and distortion coefficients using the OpenCV `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![alt text][image1] ![alt text][image2]
+![alt text][image1] 
+![alt text][image2]
 
 
 ### Pipeline (single images)
@@ -67,7 +66,8 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 
 I used a combination of color and gradient thresholds to generate a binary image (thresholding steps in IPython notebook code cell 3).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
 
-![alt text][image5] ![alt text][image6]
+![alt text][image5] 
+![alt text][image6]
 
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
