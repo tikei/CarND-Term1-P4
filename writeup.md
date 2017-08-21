@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./output_images/original_chessboard.jpg "Original chessboard image"
 [image2]: ./output_images/undistorted_output.jpg "Undistorted chessboard image"
-[image3]: ./output_images/test2.jpg "Road Image Before Distortion Correction"
+[image3]: ./test_images/test2.jpg "Road Image Before Distortion Correction"
 [image4]: ./output_images/undistorted_road.jpg "Road Transformed"
 [image5]: ./test_images/straight_lines2.jpg "Input Example Image"
 [image6]: ./output_images/binary_road.jpg "Binary Thresholded Image"
@@ -50,8 +50,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration using the `calibrate()` function located in the same code cell and distortion coefficients using the OpenCV `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![alt text][image1] 
-![alt text][image2]
+![alt text][image1] ![alt text][image2]
 
 
 ### Pipeline (single images)
@@ -64,7 +63,7 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-I used a combination of color and gradient thresholds to generate a binary image (thresholding steps in IPython notebook code cell 3).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
+I used a combination of color and gradient thresholds to generate a binary image (thresholding steps in IPython notebook code cell 3).  Here's an example of my output for this step.
 
 ![alt text][image5] 
 ![alt text][image6]
